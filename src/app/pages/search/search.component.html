@@ -1,0 +1,16 @@
+<div class="rk-portfolio__items">
+
+  <a *ngFor="let producto of productoService.productosFiltrados" [routerLink]="['/item', producto.cod]"
+  style="background-image: url('assets/productos/{{producto.url}}.jpg');"
+   class="rk-item rk-item--flex item-1 rk-size-12 rk-tosize-6 rk-landscape ">
+
+
+   <div class="item-meta" [routerLink]="['/item', producto.cod]">
+    <h2>{{producto.titulo}}</h2>
+    <p>{{producto.categoria}}</p>
+    </div>
+  </a>
+
+
+
+</div>
